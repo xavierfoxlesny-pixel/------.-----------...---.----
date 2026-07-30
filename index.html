@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01103</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #050505;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family: "Courier New", monospace;
+    }
+
+    .paper {
+        width: 420px;
+        height: 600px;
+        background: #111;
+        border: 2px solid #222;
+        box-shadow:
+            0 0 40px #000,
+            inset 0 0 80px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .paper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    }
+
+    .code {
+        color: #ddd;
+        font-size: 60px;
+        letter-spacing: 12px;
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #555;
+        z-index: 1;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="paper">
+    <div class="code">01103</div>
+</div>
+
+</body>
+</html>
